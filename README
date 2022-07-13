@@ -1,0 +1,16 @@
+
+This tiny repo demonstrates how to organize supporting modules
+and tests each in their own subdirectory ('code' and 'tests')
+to be accessible for importation as needed.
+
+driver.py can import modules from 'code' using
+    from code import <module>
+and testing code can import in the same way because
+the project directory has been added to sys.path
+(  sys.path.insert(0, os.path.split(sys.path[0])[0])  )
+
+Re GitHub:
+git remote add origin git@github.com:alexKleider/Sandbox.git
+git branch -M main
+git push -u origin main
+
